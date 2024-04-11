@@ -92,8 +92,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-   background-color: var(--light-bg);
-   padding-left: 30rem;
+   background-color: grey;
 }
 
 
@@ -163,8 +162,8 @@ section{
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
-   color: var(--white);
+   background-color: white;
+   color: black;
 }
 
 .flex-btn{
@@ -173,7 +172,7 @@ section{
 }
 
 .header{
-   position: sticky;
+   position: sticky;    
    top:0; left:0; right: 0;
    background-color: var(--white);
    z-index: 1000;
@@ -193,51 +192,6 @@ section{
    color: var(--black);
 }
 
-.header .flex .search-form{
-   width: 50rem;
-   border-radius: .5rem;
-   background-color: lightgray;
-   padding:1.5rem 2rem;
-   display: flex;
-   gap:2rem;
-
-}
-
-.header .flex .search-form input{
-   width: 100%;
-   font-size: 1.8rem;
-   color:var(--black);
-   background:none;
-}
-
-.header .flex .search-form button{
-   background:none;
-   font-size: 2rem;
-   cursor: pointer;
-   color:var(--black);
-}
-
-.header .flex .search-form button:hover{
-   color: var(--main-color);
-}
-
-.header .flex .icons div{
-   font-size: 2rem;
-   color:var(--black);
-   background-color: var(--light-bg);
-   border-radius: .5rem;
-   height: 4.5rem;
-   width: 4.5rem;
-   line-height: 4.5rem;
-   cursor: pointer;
-   text-align: center;
-   margin-left: .7rem;
-}
-
-.header .flex .icons div:hover{
-   background-color: var(--black);
-   color:var(--white);
-}
 .home-grid .box-container{
    /* display: grid; */
    display: flex;
@@ -333,60 +287,6 @@ section{
       left: 0;
       box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
       border-right: 0;
-   }
-
-}
-
-@media (max-width:991px){
-
-   html{
-      font-size: 55%;
-   }
-
-}
-
-@media (max-width:768px){
-
-   #search-btn{
-      display: inline-block;
-   }
-
-   .header .flex .search-form{
-      position: absolute;
-      top: 99%; left: 0; right: 0;
-      border-top: var(--border);
-      border-bottom: var(--border);
-      background-color: var(--white);
-      border-radius: 0;
-      width: auto;
-      padding: 2rem;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition: .2s linear;
-   }
-
-   .header .flex .search-form.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-   }
-
-}
-
-@media (max-width:450px){
-
-   html{
-      font-size: 50%;
-   }
-
-   .flex-btn{
-      gap: 0;
-      flex-flow: column;
-   }
-
-   .home-grid .box-container{
-      grid-template-columns: 1fr;
-   }
-
-   .about .row .image img{
-      height: 25rem;
    }
 
 }
